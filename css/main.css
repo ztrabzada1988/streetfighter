@@ -1,9 +1,10 @@
 body {
-    background-color: black;
+    background-image: url('../images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main {
-    background-color: white;
     margin-top: 110px;
     padding-left: 100px;
     min-width: 1200px;
@@ -12,38 +13,57 @@ body {
     z-index: 1;
 }
 
-.ryu {
+.ryu,
+.hulk-ryu {
     width: 659px;
     height: 494px;
+    display: inline-block;
+}
+
+.hulk-ryu {
+    transform: scaleX(-1);
+    -webkit-filter: hue-rotate(90deg);
+    color: aquamarine;
 }
 
 .ryu-ready,
 .ryu-still,
 .ryu-cool,
-.ryu-throwing {
+.ryu-throwing,
+.hulk-ryu-ready,
+.hulk-ryu-still,
+.hulk-ryu-cool,
+.hulk-ryu-throwing {
     width: 659px;
     height: 494px;
 }
 
 .ryu-ready,
 .ryu-cool,
-.ryu-throwing {
+.ryu-throwing,
+.hulk-ryu-ready,
+.hulk-ryu-cool,
+.hulk-ryu-throwing {
     display: none;
 }
 
-.ryu-ready {
+.ryu-ready,
+.hulk-ryu-ready {
     background-image: url('../images/ryu-ready-position.gif');
 }
 
-.ryu-still {
+.ryu-still,
+.hulk-ryu-still {
     background-image: url('../images/ryu-standing-still.png');
 }
 
-.ryu-throwing {
+.ryu-throwing,
+.hulk-ryu-throwing {
     background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
-.ryu-cool {
+.ryu-cool,
+.hulk-ryu-cool {
     background-image: url('../images/ryu-cool.gif')
 }
 
@@ -51,7 +71,12 @@ body {
 .ryu-ready,
 .ryu-still,
 .ryu-cool,
-.ryu-throwing {
+.ryu-throwing,
+.hulk-hadouken,
+.hulk-ryu-ready,
+.hulk-ryu-still,
+.hulk-ryu-cool,
+.hulk-ryu-throwing {
     background-repeat: no-repeat;
 }
 
@@ -65,7 +90,18 @@ body {
     z-index: 10;
     top: 167px;
     left: 520px;
-    float: left;
+}
+
+.hulk-hadouken {
+    background-image: url('../images/hadouken.gif');
+    width: 156px;
+    height: 90px;
+    display: none;
+    float: right;
+    position: absolute;
+    z-index: 10;
+    top: 167px;
+    left: 520px;
 }
 
 
@@ -77,6 +113,13 @@ body {
     text-align: center;
     font-family: fantasy;
     font-size: 1.5rem;
-    margin-left: 33rem;
-    margin-top: -24rem;
+    margin-left: 16rem;
+    margin-top: -37rem;
+    background-color: peachpuff;
+    border-radius: 7rem 7rem 0rem 0rem;
+    color: brown;
+}
+
+.instructions h3 {
+    margin: 0.2rem 0.2rem;
 }
