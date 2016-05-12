@@ -113,11 +113,11 @@ body {
     text-align: center;
     font-family: fantasy;
     font-size: 1.5rem;
-    margin-left: 16rem;
-    margin-top: -37rem;
-    background-color: peachpuff;
-    border-radius: 7rem 7rem 0rem 0rem;
-    color: brown;
+    margin-left: 9rem;
+    margin-top: 0rem;
+    background-color: #767971;
+    border-radius: 1rem;
+    color: #F0F0F1;
 }
 
 .instructions h3 {
